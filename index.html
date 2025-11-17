@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hamrith Consulting Service LLP (HCS)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="nav-left">
+      <img src="assets/hcs-logo.png" class="nav-logo" alt="HCS Logo">
+      <span class="nav-title">Hamrith Consulting Service LLP</span>
+    </div>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="ai-solutions.html">AI Solutions</a>
+      <a href="case-studies.html">Case Studies</a>
+      <a href="careers.html">Careers</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <button class="dark-toggle" id="darkToggle">🌙</button>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-inner">
+        <img src="assets/hcs-logo.png" class="hero-logo" alt="HCS Logo">
+        <h1>Enterprise Expertise. Startup Speed. Fraction of the Cost.</h1>
+        <p class="lead">We help organizations accelerate capability building and deploy AI-powered, measurable solutions across Learning, Automation, Data and Cloud.</p>
+        <div class="hero-cta">
+          <a class="btn-primary" href="services.html">Explore Services</a>
+          <a class="btn-secondary" href="contact.html">Request Consultation</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT PREVIEW -->
+    <section class="section intro">
+      <h2>About HCS</h2>
+      <p>Hamrith Consulting Service (HCS) partners with enterprise and mid-market teams to design learning ecosystems, build automation & analytics, and deliver AI/ML solutions with enterprise discipline and startup speed. We specialize in L&D strategy, digital transformation, and data-driven decision support.</p>
+      <a class="link-more" href="about.html">Read more about us →</a>
+    </section>
+
+    <!-- SERVICES PREVIEW -->
+    <section id="services-preview" class="section">
+      <h2>Our Services</h2>
+      <div class="card-grid">
+        <div class="card">
+          <h3>AI & Machine Learning</h3>
+          <p>Custom ML models, NLP, sentiment analysis, predictive systems, and production deployment.</p>
+        </div>
+        <div class="card">
+          <h3>Learning & Development</h3>
+          <p>End-to-end curriculum design, e-learning, microlearning, assessments and LMS integrations.</p>
+        </div>
+        <div class="card">
+          <h3>Digital Transformation</h3>
+          <p>Power Platform automation, Azure DevOps, D365 optimizations and enterprise workflows.</p>
+        </div>
+        <div class="card">
+          <h3>Data Analytics & BI</h3>
+          <p>Power BI dashboards, SQL engineering, reporting frameworks, and governance.</p>
+        </div>
+      </div>
+      <div class="more-actions">
+        <a class="btn-primary" href="services.html">View all services</a>
+      </div>
+    </section>
+
+    <!-- DIRECTORS -->
+    <section id="directors" class="section">
+      <h2>Directors</h2>
+      <div class="director-container">
+        <div class="director-card">
+          <img src="assets/director-pushpatha.jpg" alt="Pushpatha" class="director-photo">
+          <h3>Pushpatha</h3>
+          <p class="muted"><strong>Director</strong></p>
+          <p>Leads strategy, operations and enterprise governance at HCS. Drives customer delivery and capability-building.</p>
+        </div>
+        <div class="director-card">
+          <img src="assets/director-bhaskar.jpg" alt="Bhaskar DV" class="director-photo">
+          <h3>Bhaskar D.V</h3>
+          <p class="muted"><strong>Director & Consultant</strong></p>
+          <p>Program Manager with 15+ years experience in L&D, AI/ML, digital transformation and multi-region program delivery.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CASE STUDIES PREVIEW -->
+    <section id="case-preview" class="section">
+      <h2>Selected Case Studies</h2>
+      <div class="card-grid">
+        <div class="card">
+          <h3>AI-driven Sentiment Analysis</h3>
+          <p>NLP pipeline + analytics for investment insights (startup). Python, Scikit-Learn, dashboards.</p>
+        </div>
+        <div class="card">
+          <h3>Microsoft Workforce Enablement</h3>
+          <p>Global learning and operations for 10,000+ learners with automation and reporting.</p>
+        </div>
+      </div>
+      <a class="link-more" href="case-studies.html">View all case studies →</a>
+    </section>
+
+    <!-- CONTACT PREVIEW -->
+    <section id="contact-preview" class="section">
+      <h2>Get in touch</h2>
+      <p>For project enquiries or collaborations, email <strong>operations@hcsbharath.com</strong> or <strong>bhaskarvenkatesh23@gmail.com</strong>. Or request a consultation.</p>
+      <a class="btn-secondary" href="contact.html">Contact Us</a>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Hamrith Consulting Service LLP (HCS). All Rights Reserved. Unauthorized use, reproduction, or distribution of this content is strictly prohibited.
+  </footer>
+
+  <script>
+    // dark mode toggle
+    const toggle = document.getElementById('darkToggle');
+    toggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+      toggle.textContent = document.body.classList.contains('dark') ? '☀️' : '🌙';
+      localStorage.setItem('hcs-dark', document.body.classList.contains('dark'));
+    });
+    if (localStorage.getItem('hcs-dark') === 'true') {
+      document.body.classList.add('dark');
+      toggle.textContent = '☀️';
+    }
+  </script>
+</body>
+</html>

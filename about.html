@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About – HCS</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-left">
+      <img src="assets/hcs-logo.png" class="nav-logo" alt="HCS Logo">
+      <span class="nav-title">Hamrith Consulting Service LLP</span>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="ai-solutions.html">AI Solutions</a>
+      <a href="case-studies.html">Case Studies</a>
+      <a href="careers.html">Careers</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="dark-toggle" id="darkToggle">🌙</button>
+  </header>
+
+  <main>
+    <section class="hero small-hero">
+      <h1>About Hamrith Consulting Service (HCS)</h1>
+      <p class="lead">We help organizations scale capability and deliver measurable transformation across Learning, AI, Data and Cloud.</p>
+    </section>
+
+    <section class="section">
+      <h2>Company Overview</h2>
+      <p>Hamrith Consulting Services LLP (HCS) is a consulting firm specializing in enterprise learning, digital transformation, AI/ML and data-driven operations. We combine enterprise-grade expertise with startup speed to help teams innovate, automate, and scale.</p>
+
+      <h3>Our Approach</h3>
+      <p>We solve problems by combining strategic consulting, technical implementation and learning-led adoption. We design practical roadmaps, deliver production-ready solutions, and ensure measurable adoption via governance and insights.</p>
+
+      <h3>Leadership</h3>
+      <div class="director-container">
+        <div class="director-card">
+          <img src="assets/director-pushpatha.jpg" alt="Pushpatha" class="director-photo">
+          <h3>Pushpatha</h3>
+          <p><strong>Director</strong></p>
+          <p>Strategy, operations & client delivery leadership.</p>
+        </div>
+        <div class="director-card">
+          <img src="assets/director-bhaskar.jpg" alt="Bhaskar DV" class="director-photo">
+          <h3>Bhaskar D.V</h3>
+          <p><strong>Director & Consultant</strong></p>
+          <p>Program Management, L&D, AI/ML, and digital transformation specialist.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Vision, Mission & Values</h2>
+      <h4>Vision</h4>
+      <p>To enable organizations worldwide to learn faster, innovate smarter, and operate efficiently through AI-powered solutions and meaningful learning experiences.</p>
+
+      <h4>Mission</h4>
+      <ul>
+        <li>Build next-gen AI + L&D ecosystems that deliver measurable impact.</li>
+        <li>Deliver automation and analytics that reduce cost and increase speed.</li>
+        <li>Empower teams with scalable capability-building programs and data-driven decision systems.</li>
+      </ul>
+
+      <h4>Values</h4>
+      <ul>
+        <li><strong>Innovation with Purpose</strong> — We solve real business problems.</li>
+        <li><strong>Integrity in Delivery</strong> — Transparent, dependable, outcome-focused.</li>
+        <li><strong>Learner-First Mindset</strong> — People + capability matter.</li>
+        <li><strong>Data-Driven Decisions</strong> — Evidence guides action.</li>
+        <li><strong>Ownership & Speed</strong> — We act fast and take responsibility.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Hamrith Consulting Service LLP (HCS). All Rights Reserved. Unauthorized use, reproduction, or distribution of this content is strictly prohibited.
+  </footer>
+
+  <script>
+    // dark mode (shared script)
+    const toggle = document.getElementById('darkToggle');
+    toggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+      toggle.textContent = document.body.classList.contains('dark') ? '☀️' : '🌙';
+      localStorage.setItem('hcs-dark', document.body.classList.contains('dark'));
+    });
+    if (localStorage.getItem('hcs-dark') === 'true') {
+      document.body.classList.add('dark');
+      toggle.textContent = '☀️';
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Services – HCS</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-left">
+      <img src="assets/hcs-logo.png" class="nav-logo" alt="HCS Logo">
+      <span class="nav-title">HCS Services</span>
+    </div>
+    <nav>
+      <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="ai-solutions.html">AI Solutions</a><a href="case-studies.html">Case Studies</a><a href="careers.html">Careers</a><a href="contact.html">Contact</a>
+    </nav>
+    <button class="dark-toggle" id="darkToggle">🌙</button>
+  </header>
+
+  <main>
+    <section class="hero small-hero">
+      <h1>Services — What We Do</h1>
+      <p class="lead">Comprehensive services across learning, AI, automation, data and cloud.</p>
+    </section>
+
+    <section class="section">
+      <h2>AI & Machine Learning</h2>
+      <p>Advisory, model development, MLOps, NLP, classification, ensemble methods and production deployment. Tools: Python, Scikit-Learn, Pandas, Jupyter, Azure ML.</p>
+
+      <h2>Learning & Development</h2>
+      <p>End-to-end curriculum, e-learning, storyboarding, SCORM packaging, assessments and LMS integrations (SF LMS, AEM, Articulate).</p>
+
+      <h2>Digital Transformation & Automation</h2>
+      <p>Power Platform automation, Azure DevOps pipelines, Dynamics 365 optimization, process re-engineering and change adoption.</p>
+
+      <h2>Data & Analytics</h2>
+      <p>Power BI dashboards, data engineering, SQL, reporting automation and executive insights.</p>
+
+      <h2>Program & Operations Management</h2>
+      <p>Governance, multi-region delivery, SLA/KPI frameworks, vendor management and program controls.</p>
+
+      <h2>Cloud & DevOps Enablement</h2>
+      <p>DevOps best practices, CI/CD, infrastructure guidance and cloud migration support (Azure).</p>
+
+      <div class="more-actions">
+        <a class="btn-primary" href="contact.html">Request Consultation</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2025 Hamrith Consulting Service LLP (HCS). All Rights Reserved. Unauthorized use, reproduction, or distribution of this content is strictly prohibited.</footer>
+
+  <script>
+    const toggle = document.getElementById('darkToggle');
+    toggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+      toggle.textContent = document.body.classList.contains('dark') ? '☀️' : '🌙';
+      localStorage.setItem('hcs-dark', document.body.classList.contains('dark'));
+    });
+    if (localStorage.getItem('hcs-dark') === 'true') {
+      document.body.classList.add('dark');
+      toggle.textContent = '☀️';
+    }
+  </script>
+</body>
+</html>

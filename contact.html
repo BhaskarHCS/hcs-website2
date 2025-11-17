@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact – HCS</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="nav-left">
+      <img src="assets/hcs-logo.png" class="nav-logo" alt="HCS Logo">
+      <span class="nav-title">Hamrith Consulting Service LLP</span>
+    </div>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="ai-solutions.html">AI Solutions</a>
+      <a href="case-studies.html">Case Studies</a>
+      <a href="careers.html">Careers</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <button class="dark-toggle" id="darkToggle">🌙</button>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <section class="hero small-hero">
+      <h1>Contact Us</h1>
+      <p class="lead">We would love to hear from you. Our team will respond within 24–48 hours.</p>
+    </section>
+
+    <section class="section">
+      <h2>Get in touch</h2>
+      <p>
+        Email us at:  
+        <strong>operations@hcsbharath.com</strong>  
+        <br>
+        For direct communication:  
+        <strong>bhaskarvenkatesh23@gmail.com</strong>
+      </p>
+
+      <br>
+
+      <!-- ============================== -->
+      <!-- CONTACT FORM (FORMSUBMIT.CO) -->
+      <!-- ============================== -->
+
+      <form id="contactForm" method="POST" action="https://formsubmit.co/operations@hcsbharath.com">
+
+        <!-- Send copy to Bhaskar -->
+        <input type="hidden" name="_cc" value="bhaskar.venkatesh@hcsbharath.com">
+
+        <!-- Redirect after submission -->
+        <input type="hidden" name="_next" value="https://www.hcsbharath.com/thank-you.html">
+
+        <!-- Email subject -->
+        <input type="hidden" name="_subject" value="New message from HCS website">
+
+        <!-- CAPTCHA toggle -->
+        <input type="hidden" name="_captcha" value="true">
+
+        <!-- SPAM HONEYPOT -->
+        <input type="text" name="_honey" style="display:none">
+
+        <!-- FORM FIELDS -->
+        <label>Name
+          <input type="text" name="name" required placeholder="Your full name">
+        </label>
+
+        <label>Email
+          <input type="email" name="email" required placeholder="your@email.com">
+        </label>
+
+        <label>Company
+          <input type="text" name="company" placeholder="Optional">
+        </label>
+
+        <label>Message
+          <textarea name="message" rows="6" required placeholder="Tell us how we can help"></textarea>
+        </label>
+
+        <div style="margin-top:15px;">
+          <button type="submit" class="btn-primary">Send Message</button>
+        </div>
+      </form>
+
+      <br>
+      <p class="muted">
+        This form is protected with automated spam filters.  
+        If you face any issues, contact us directly at <strong>operations@hcsbharath.com</strong>.
+      </p>
+
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2025 Hamrith Consulting Service LLP (HCS). All Rights Reserved. Unauthorized use, reproduction, or distribution of this content is strictly prohibited.
+  </footer>
+
+  <!-- DARK MODE SCRIPT -->
+  <script>
+    const toggle = document.getElementById('darkToggle');
+    toggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+      toggle.textContent = document.body.classList.contains('dark') ? '☀️' : '🌙';
+      localStorage.setItem('hcs-dark', document.body.classList.contains('dark'));
+    });
+
+    if (localStorage.getItem('hcs-dark') === 'true') {
+      document.body.classList.add('dark');
+      toggle.textContent = '☀️';
+    }
+
+    // OPTIONAL SUCCESS NOTICE BEFORE REDIRECT
+    const form = document.getElementById('contactForm');
+    form.addEventListener('submit', () => {
+      alert('Thank you! Your message is being sent.');
+    });
+  </script>
+
+</body>
+</html>
