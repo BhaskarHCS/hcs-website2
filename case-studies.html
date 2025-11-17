@@ -7,37 +7,30 @@
   <link rel="stylesheet" href="style.css" />
   <script defer src="scripts.js"></script>
 </head>
-
 <body>
 
-<!-- NAVBAR -->
 <header class="navbar">
   <div class="nav-left">
     <img src="assets/hcs-logo.png" class="nav-logo" alt="HCS Logo" />
     <span class="nav-title">Hamrith Consulting Services LLP</span>
   </div>
-
-  <nav class="nav-links" id="navLinks">
+  <nav class="nav-links">
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="services.html">Services</a>
     <a href="ai-solutions.html">AI Solutions</a>
-    <a href="case-studies.html">Case Studies</a>
+    <a href="case-studies.html" class="active">Case Studies</a>
     <a href="careers.html">Careers</a>
     <a href="contact.html">Contact</a>
   </nav>
-
   <div class="nav-controls">
     <a class="call-btn" href="tel:+919739000274">📞</a>
     <a class="wa-btn" href="https://wa.me/919739000274" target="_blank">💬</a>
     <button class="dark-toggle" id="darkToggle">🌙</button>
     <button class="hamburger" id="hamburger">☰</button>
   </div>
-
-  <!-- MOBILE MENU -->
-  <div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
     <button class="mobile-close" id="mobileClose">×</button>
-
     <nav class="mobile-nav">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
@@ -46,81 +39,255 @@
       <a href="case-studies.html">Case Studies</a>
       <a href="careers.html">Careers</a>
       <a href="contact.html">Contact</a>
-
-      <div class="mobile-actions">
-        <a class="btn-primary" href="contact.html">Request Consultation</a>
-        <a class="btn-secondary" href="tel:+919739000274">Tap to Call</a>
-      </div>
     </nav>
   </div>
 </header>
 
-<!-- HERO -->
 <section class="hero small-hero">
-  <h1>Case Studies</h1>
-  <p class="lead">Real-world examples of our AI, Learning, and Digital Transformation outcomes.</p>
+  <h1>Case Studies & Projects</h1>
+  <p class="lead">Selected projects showcasing our AI, data science, computer vision, and ML capabilities.</p>
 </section>
 
-<!-- CASE STUDY CARDS -->
 <section class="section">
-  <h2>Featured Case Studies</h2>
-
   <div class="case-grid">
 
+    <!-- 1 -->
     <div class="case-card">
-      <img src="assets/case1.jpg" alt="Case Study 1" />
+      <img src="assets/case-rag.jpg" alt="RAG Q&A" />
       <div class="case-content">
-        <h3>AI-Driven Sentiment Analysis Platform</h3>
-        <p>Full NLP + ML pipeline combining financial news, market data and predictive modeling for an investment startup.</p>
-        <a href="#" class="btn-primary">Read More</a>
+        <h3>Retrieval-Augmented Generation (RAG) Q&A System</h3>
+        <p>Built a RAG pipeline combining vector search over domain docs with LLM answer synthesis for reliable enterprise Q&A.</p>
+        <a href="#case-rag" class="btn-primary">Read More</a>
       </div>
     </div>
 
+    <!-- 2 -->
     <div class="case-card">
-      <img src="assets/case2.jpg" alt="Case Study 2" />
+      <img src="assets/case-multilang.jpg" alt="Multilingual Understanding" />
       <div class="case-content">
-        <h3>Microsoft Engineering L&D Enablement</h3>
-        <p>Managed global learning operations for 10,000+ engineers across JAPAC, EMEA & NA through Allyis (Microsoft vendor).</p>
-        <a href="#" class="btn-primary">Read More</a>
+        <h3>Intelligent Multilingual Document Understanding</h3>
+        <p>Automated extraction, translation and normalization across multilingual datasets for compliance and search.</p>
+        <a href="#case-multilang" class="btn-primary">Read More</a>
       </div>
     </div>
 
+    <!-- 3 -->
     <div class="case-card">
-      <img src="assets/case3.jpg" alt="Case Study 3" />
+      <img src="assets/case-satellite.jpg" alt="Satellite Imagery CV" />
       <div class="case-content">
-        <h3>Enterprise Automation & Insights</h3>
-        <p>Delivered Power BI dashboards, workflow automation, D365 enhancements and AEM workflow improvements.</p>
-        <a href="#" class="btn-primary">Read More</a>
+        <h3>Visual Search, Retrieval & Detection in Satellite Imagery</h3>
+        <p>Object detection, change detection and index-based search across high-res satellite tiles for monitoring solutions.</p>
+        <a href="#case-satellite" class="btn-primary">Read More</a>
+      </div>
+    </div>
+
+    <!-- 4 -->
+    <div class="case-card">
+      <img src="assets/case-nlp-stock.jpg" alt="Stock Market NLP" />
+      <div class="case-content">
+        <h3>Stock Market Sentiment Analysis & Weekly Summaries</h3>
+        <p>End-to-end pipeline for news ingestion, sentiment scoring, weekly summarization and feature engineering for prediction.</p>
+        <a href="#case-stock" class="btn-primary">Read More</a>
+      </div>
+    </div>
+
+    <!-- 5 -->
+    <div class="case-card">
+      <img src="assets/case-face.jpg" alt="Face Recognition" />
+      <div class="case-content">
+        <h3>Face Recognition for Media — Scene-level Cast Lookup</h3>
+        <p>Automated face detection + identity mapping to enable interactive cast metadata lookups in streaming players.</p>
+        <a href="#case-face" class="btn-primary">Read More</a>
+      </div>
+    </div>
+
+    <!-- 6 -->
+    <div class="case-card">
+      <img src="assets/case-svhn.jpg" alt="SVHN & Signal Quality" />
+      <div class="case-content">
+        <h3>Signal Quality Classification & SVHN Digit Recognition</h3>
+        <p>Signal quality predictor for communications hardware and multi-digit SVHN classifier for street-level OCR tasks.</p>
+        <a href="#case-svhn" class="btn-primary">Read More</a>
+      </div>
+    </div>
+
+    <!-- 7 -->
+    <div class="case-card">
+      <img src="assets/case-translation.jpg" alt="Machine Translation" />
+      <div class="case-content">
+        <h3>Machine Translation (ACL2014 dataset experiments)</h3>
+        <p>Statistical and neural translation experiments on European language pairs to evaluate automated translation performance.</p>
+        <a href="#case-translation" class="btn-primary">Read More</a>
+      </div>
+    </div>
+
+    <!-- 8 -->
+    <div class="case-card">
+      <img src="assets/case-sql.jpg" alt="SQL & BI" />
+      <div class="case-content">
+        <h3>SQL & BI — Quarterly Executive Dashboards</h3>
+        <p>End-to-end SQL reporting, KPI dashboards and executive summaries for business-health monitoring and decision-making.</p>
+        <a href="#case-sql" class="btn-primary">Read More</a>
+      </div>
+    </div>
+
+    <!-- 9 -->
+    <div class="case-card">
+      <img src="assets/case-churn.jpg" alt="Churn Prediction" />
+      <div class="case-content">
+        <h3>Churn Prediction — Credit Card Users</h3>
+        <p>Featurization, model selection and tuning for classification models to identify high-risk churn customers and recommend retention actions.</p>
+        <a href="#case-churn" class="btn-primary">Read More</a>
+      </div>
+    </div>
+
+    <!-- 10 -->
+    <div class="case-card">
+      <img src="assets/case-tradeahead.jpg" alt="Unsupervised Clustering" />
+      <div class="case-content">
+        <h3>Unsupervised Learning — Trade&Ahead Stock Clustering</h3>
+        <p>Clustering-based grouping of NYSE stocks by attributes, with descriptive analytics per cluster for tailored investment strategies.</p>
+        <a href="#case-tradeahead" class="btn-primary">Read More</a>
+      </div>
+    </div>
+
+    <!-- 11 -->
+    <div class="case-card">
+      <img src="assets/case-easyvisa.jpg" alt="Ensemble Techniques" />
+      <div class="case-content">
+        <h3>Ensemble Techniques — EasyVisa Visa Approval Prioritization</h3>
+        <p>Ensemble classification pipeline to recommend candidate certification decisions and prioritize case review.</p>
+        <a href="#case-easyvisa" class="btn-primary">Read More</a>
+      </div>
+    </div>
+
+    <!-- 12 -->
+    <div class="case-card">
+      <img src="assets/case-innhotels.jpg" alt="INN Hotels Cancellation" />
+      <div class="case-content">
+        <h3>Supervised Learning — INN Hotels Cancellation Prediction</h3>
+        <p>Predictive modeling to identify likely booking cancellations and provide data-driven policy recommendations.</p>
+        <a href="#case-innhotels" class="btn-primary">Read More</a>
+      </div>
+    </div>
+
+    <!-- 13 -->
+    <div class="case-card">
+      <img src="assets/case-enews.jpg" alt="A/B Test" />
+      <div class="case-content">
+        <h3>Applied Statistics — E-news Express A/B Testing</h3>
+        <p>Controlled experiment analysis: conversion rates, time-on-page comparisons, and subgroup tests across languages.</p>
+        <a href="#case-enews" class="btn-primary">Read More</a>
       </div>
     </div>
 
   </div>
 </section>
 
+<!-- DETAILED CASE PAGES (ANCHORS) -->
 <section class="section">
-  <h2>What’s Coming Next</h2>
-  <p>We are adding more detailed case studies soon, including:</p>
-  <ul>
-    <li>AI Agents for Workflow Automation</li>
-    <li>Instructional Design Modernization Projects</li>
-    <li>Cloud & DevOps Transformation Programs</li>
-    <li>Data Engineering Pipelines with Azure</li>
-  </ul>
+  <article id="case-rag">
+    <h2>Retrieval-Augmented Generation (RAG) Q&A System</h2>
+    <p><strong>Overview:</strong> We implemented a RAG pipeline that ingests a domain corpus, builds vector embeddings, and uses a retrieval step to supply relevant context to a generative model producing concise answers. This reduces hallucination and improves factuality for enterprise knowledge retrieval.</p>
+    <p><strong>Components:</strong> Document ingestion → Text cleaning → Vector embeddings → FAISS/Vector DB search → LLM synthesizer (prompt design) → Answer verification layer.</p>
+    <p><strong>Impact:</strong> Faster, more accurate employee self-service and knowledge retrieval; reduction in support ticket times.</p>
+  </article>
+
+  <hr>
+
+  <article id="case-multilang">
+    <h2>Intelligent Multilingual Document Understanding</h2>
+    <p><strong>Overview:</strong> End-to-end pipeline for language detection, document segmentation, entity extraction and cross-lingual normalization. Integrated translation and semantic indexing to power search and compliance audits.</p>
+    <p><strong>Dataset:</strong> Mixed-language corpora; experiments included ACL2014 and internal multilingual datasets.</p>
+  </article>
+
+  <hr>
+
+  <article id="case-satellite">
+    <h2>Visual Search & Detection in Satellite Imagery</h2>
+    <p><strong>Overview:</strong> Models trained for object detection, scene change detection, and tile-level indexing. Used for monitoring infrastructure, land-use change, and asset tracking.</p>
+    <p><strong>Tech:</strong> CNN backbones, segmentation models, tiling pipelines, cloud compute for batch inference.</p>
+  </article>
+
+  <hr>
+
+  <article id="case-stock">
+    <h2>Stock Market Sentiment Analysis & Weekly Summaries</h2>
+    <p><strong>Problem:</strong> A startup collected historical daily news and stock prices and needed a sentiment-driven feature pipeline to improve price-prediction models.</p>
+    <p><strong>Solution:</strong> Clean/normalize news → sentence-level sentiment scoring → weekly aggregation & summary → feature engineering for time-series models.</p>
+    <p><strong>Outcome:</strong> Improved signal quality in downstream models and faster analyst insights.</p>
+  </article>
+
+  <hr>
+
+  <article id="case-face">
+    <h2>Face Recognition for Media</h2>
+    <p><strong>Overview:</strong> Scene-level face detection and face recognition linked to cast metadata to enable interactive in-player actor lookups.</p>
+    <p><strong>Tech:</strong> Face detection models, embedding generation, face-indexing and fuzzy-match retrieval against cast database.</p>
+  </article>
+
+  <hr>
+
+  <article id="case-svhn">
+    <h2>Signal Quality & SVHN Digit Recognition</h2>
+    <p><strong>Part A:</strong> Predict signal quality for communications equipment using sensor parameters and supervised classification.</p>
+    <p><strong>Part B:</strong> Multi-digit recognition using SVHN; preprocessing, bounding box detection, and sequence decoding.</p>
+  </article>
+
+  <hr>
+
+  <article id="case-translation">
+    <h2>Machine Translation (ACL2014 Experiments)</h2>
+    <p>Experiments and benchmarking on ACL2014 statistical machine translation datasets and neural models for European language pairs.</p>
+  </article>
+
+  <hr>
+
+  <article id="case-sql">
+    <h2>SQL & BI — Executive Dashboards</h2>
+    <p>Quarterly BI pipeline: ETL from transaction & feedback systems → aggregated KPIs → executive report with SQL-driven insights.</p>
+  </article>
+
+  <hr>
+
+  <article id="case-churn">
+    <h2>Churn Prediction — Credit Card Users</h2>
+    <p>Featurization, class balance handling, model selection (XGBoost/RandomForest), hyperparameter tuning, and action-based recommendations to reduce churn risk.</p>
+  </article>
+
+  <hr>
+
+  <article id="case-tradeahead">
+    <h2>Unsupervised Clustering — Trade&Ahead</h2>
+    <p>Cluster profiling for NYSE stocks to identify similar-behaviour groups and generate cluster-level trading signals.</p>
+  </article>
+
+  <hr>
+
+  <article id="case-easyvisa">
+    <h2>EasyVisa — Ensemble Techniques</h2>
+    <p>Ensemble classifiers to prioritize visa application reviews and surface features that most influence approval likelihood.</p>
+  </article>
+
+  <hr>
+
+  <article id="case-innhotels">
+    <h2>INN Hotels — Cancellation Prediction</h2>
+    <p>Predictive modeling to identify bookings with high cancellation probability and suggest pricing/refund policy adjustments.</p>
+  </article>
+
+  <hr>
+
+  <article id="case-enews">
+    <h2>E-news Express — A/B Testing & Statistical Analysis</h2>
+    <p>Controlled experiment analysis: time-on-page tests, conversion rate comparisons, and language subgroup evaluation at 5% significance.</p>
+  </article>
+
 </section>
 
 <footer>
-  © 2025 Hamrith Consulting Service LLP (HCS). All Rights Reserved.
+  © 2025 Hamrith Consulting Services LLP (HCS). All Rights Reserved.
 </footer>
-
-<button class="callback-btn" id="callbackBtn">Request Callback</button>
-
-<div id="callbackPopup" class="callback-popup">
-  <h3>Request a Callback</h3>
-  <input type="text" placeholder="Your Name" />
-  <input type="text" placeholder="Phone Number" />
-  <button>Submit</button>
-  <button id="closeCallback" class="btn-secondary" style="margin-top:10px;">Close</button>
-</div>
 
 </body>
 </html>
