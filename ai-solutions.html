@@ -1,68 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>AI Solutions – HCS</title>
   <link rel="stylesheet" href="style.css" />
-  <script defer src="scripts.js"></script>
 </head>
 
 <body>
 
-<!-- NAVBAR -->
-<header class="navbar">
-  <div class="nav-left">
-    <img src="assets/hcs-logo.png" class="nav-logo" alt="HCS Logo" />
-    <span class="nav-title">Hamrith Consulting Services LLP</span>
-  </div>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="nav-left">
+      <img src="assets/hcs-logo.png" class="nav-logo" alt="HCS Logo" />
+      <span class="nav-title">Hamrith Consulting Services LLP</span>
+    </div>
 
-  <nav class="nav-links" id="navLinks">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="ai-solutions.html">AI Solutions</a>
-    <a href="case-studies.html">Case Studies</a>
-    <a href="careers.html">Careers</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-
-  <div class="nav-controls">
-    <a class="call-btn" href="tel:+919739000274">📞</a>
-    <a class="wa-btn" href="https://wa.me/919739000274" target="_blank">💬</a>
-    <button class="dark-toggle" id="darkToggle">🌙</button>
-    <button class="hamburger" id="hamburger">☰</button>
-  </div>
-
-  <!-- MOBILE MENU -->
-  <div class="mobile-menu" id="mobileMenu">
-    <button class="mobile-close" id="mobileClose">×</button>
-
-    <nav class="mobile-nav">
+    <nav class="nav-links" id="navLinks">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="services.html">Services</a>
-      <a href="ai-solutions.html">AI Solutions</a>
+      <a href="ai-solutions.html" class="active">AI Solutions</a>
       <a href="case-studies.html">Case Studies</a>
       <a href="careers.html">Careers</a>
       <a href="contact.html">Contact</a>
-
-      <div class="mobile-actions">
-        <a class="btn-primary" href="contact.html">Request Consultation</a>
-        <a class="btn-secondary" href="tel:+919739000274">Tap to Call</a>
-      </div>
     </nav>
-  </div>
-</header>
 
-<!-- HERO -->
-<section class="hero small-hero">
-  <h1>AI & Machine Learning Solutions</h1>
-  <p class="lead">We design intelligent systems that enhance decision-making, automate workflows, and unlock new business value.</p>
-</section>
+    <div class="nav-controls">
+      <a class="call-btn" href="tel:+919739000274">📞</a>
+      <a class="wa-btn" href="https://wa.me/919739000274" target="_blank">💬</a>
+      <button class="dark-toggle" id="darkToggle">🌙</button>
+      <button class="hamburger" id="hamburger">☰</button>
+    </div>
 
-<!-- AI SOLUTIONS -->
-<!-- ADVANCED AI PROJECTS & RESEARCH USE CASES -->
+    <div class="mobile-menu" id="mobileMenu">
+      <button class="mobile-close" id="mobileClose">×</button>
+      <nav class="mobile-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="ai-solutions.html" class="active">AI Solutions</a>
+        <a href="case-studies.html">Case Studies</a>
+        <a href="careers.html">Careers</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>AI & Machine Learning Solutions</h1>
+    <p class="lead">
+      Transform your business with custom-built AI systems, automation workflows, and enterprise-grade ML solutions.
+    </p>
+  </section>
+
+  <!-- AI SERVICE OFFERINGS -->
+  <section class="section">
+    <h2 class="center">Our AI Capabilities</h2>
+    <p class="center lead">We design, build, and deploy AI systems tailored to your business.</p>
+
+    <div class="services-grid">
+
+      <div class="service-card">
+        <img src="assets/ai-ml-placeholder.jpg" class="service-img" alt="Machine Learning">
+        <h3>Custom ML Models</h3>
+        <p>Classification, regression, forecasting, optimization and predictive modeling tailored for business goals.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="assets/nlp-placeholder.jpg" class="service-img" alt="NLP">
+        <h3>Natural Language Processing</h3>
+        <p>Text analysis, summarization, sentiment detection, classification and conversational AI workflows.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="assets/automation-placeholder.jpg" class="service-img" alt="AI Automation">
+        <h3>AI Automation</h3>
+        <p>Automate processes using AI agents, document processing, intelligent routing and smart workflows.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="assets/analytics-placeholder.jpg" class="service-img" alt="AI Analytics">
+        <h3>AI-Powered Analytics</h3>
+        <p>Behavior prediction, anomaly detection, insights dashboards and real-time decision systems.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- AI PRODUCT CATALOGUE -->
+  <section class="section">
+    <h2 class="center">AI Product Catalogue</h2>
+    <p class="center lead">Ready-to-deploy AI accelerators for faster transformation.</p>
+
+    <div class="details-grid">
+
+      <div class="detail-card">
+        <h3>Sentiment Intelligence Engine</h3>
+        <ul>
+          <li>Analyzes customer/market sentiment</li>
+          <li>Processes news, reviews, social signals</li>
+          <li>Suitable for finance, retail, product feedback</li>
+        </ul>
+      </div>
+
+      <div class="detail-card">
+        <h3>Document Intelligence</h3>
+        <ul>
+          <li>Automates document classification</li>
+          <li>Extracts entities and structured data</li>
+          <li>Ideal for HR, finance, compliance</li>
+        </ul>
+      </div>
+
+      <div class="detail-card">
+        <h3>Conversational AI Assistant</h3>
+        <ul>
+          <li>Chat-based & voice-based AI</li>
+          <li>Custom knowledge base integration</li>
+          <li>Support, HR, L&D and operations use cases</li>
+        </ul>
+      </div>
+
+      <div class="detail-card">
+        <h3>Forecasting Engine</h3>
+        <ul>
+          <li>Demand, sales, financial & supply predictions</li>
+          <li>Model tuning and scenario simulations</li>
+          <li>For planning, logistics, finance teams</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ADVANCED AI PROJECTS & RESEARCH USE CASES -->
 <section class="section">
   <h2 class="center">Advanced AI Projects & Use Cases</h2>
   <p class="center lead">Selected applied AI, NLP, CV and ML systems developed or prototyped at HCS.</p>
@@ -134,40 +208,60 @@
 
 </section>
 
+  <!-- TECHNICAL CAPABILITIES -->
+  <section class="section">
+    <h2 class="center">Technical Expertise</h2>
+    <p class="center lead">Built with modern AI tools and enterprise-grade stacks.</p>
 
-<!-- AI PROJECTS -->
-<section class="section">
-  <h2>Key AI Projects</h2>
+    <div class="details-grid">
+      <div class="detail-card">
+        <h3>AI Frameworks</h3>
+        <ul>
+          <li>TensorFlow</li>
+          <li>PyTorch</li>
+          <li>Scikit-learn</li>
+          <li>HuggingFace Transformers</li>
+        </ul>
+      </div>
 
-  <h3>AI-driven Sentiment Analysis System</h3>
-  <p>Developed an end-to-end sentiment analysis engine combining NLP, financial news signals, historical market data, and ML prediction layers for investment intelligence.</p>
+      <div class="detail-card">
+        <h3>Languages</h3>
+        <ul>
+          <li>Python</li>
+          <li>SQL</li>
+          <li>JavaScript</li>
+        </ul>
+      </div>
 
-  <h3>Ensemble Learning Project</h3>
-  <p>Built classification models using Random Forest, XGBoost, SVM, and model blending to enhance predictive accuracy across datasets.</p>
+      <div class="detail-card">
+        <h3>Cloud & Compute</h3>
+        <ul>
+          <li>Azure ML</li>
+          <li>Azure OpenAI</li>
+          <li>Azure DevOps</li>
+          <li>GitHub Actions</li>
+        </ul>
+      </div>
 
-  <h3>Automation & Intelligence</h3>
-  <ul>
-    <li>Chatbot and conversational AI workflows</li>
-    <li>Automated data labeling & classification</li>
-    <li>Business logic automation using AI agents</li>
-    <li>Deep learning model deployment</li>
-  </ul>
-</section>
+      <div class="detail-card">
+        <h3>Integrations</h3>
+        <ul>
+          <li>REST APIs</li>
+          <li>Databases & Data Lakes</li>
+          <li>CRM/ERP (D365, Salesforce)</li>
+          <li>Automation Platforms</li>
+        </ul>
+      </div>
 
-<footer>
-  © 2025 Hamrith Consulting Service LLP (HCS). All Rights Reserved.
-</footer>
+    </div>
+  </section>
 
-<button class="callback-btn" id="callbackBtn">Request Callback</button>
+  <footer>
+    © 2025 Hamrith Consulting Services LLP (HCS). All Rights Reserved.
+  </footer>
 
-<div id="callbackPopup" class="callback-popup">
-  <h3>Request a Callback</h3>
-  <input type="text" placeholder="Your Name" />
-  <input type="text" placeholder="Phone Number" />
-  <button>Submit</button>
-  <button id="closeCallback" class="btn-secondary" style="margin-top:10px;">Close</button>
-</div>
+  <script src="scripts.js"></script>
 
 </body>
-</html>
 
+</html>
