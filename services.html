@@ -1,149 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Services – HCS</title>
   <link rel="stylesheet" href="style.css" />
-  <script defer src="scripts.js"></script>
 </head>
 
 <body>
 
-<!-- NAVBAR -->
-<header class="navbar">
-  <div class="nav-left">
-    <img src="assets/hcs-logo.png" class="nav-logo" alt="HCS Logo" />
-    <span class="nav-title">Hamrith Consulting Services LLP</span>
-  </div>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="nav-left">
+      <img src="assets/hcs-logo.png" class="nav-logo" alt="HCS Logo" />
+      <span class="nav-title">Hamrith Consulting Services LLP</span>
+    </div>
 
-  <nav class="nav-links" id="navLinks">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="ai-solutions.html">AI Solutions</a>
-    <a href="case-studies.html">Case Studies</a>
-    <a href="careers.html">Careers</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-
-  <div class="nav-controls">
-    <a class="call-btn" href="tel:+919739000274">📞</a>
-    <a class="wa-btn" href="https://wa.me/919739000274" target="_blank">💬</a>
-    <button class="dark-toggle" id="darkToggle">🌙</button>
-    <button class="hamburger" id="hamburger">☰</button>
-  </div>
-
-  <!-- MOBILE MENU -->
-  <div class="mobile-menu" id="mobileMenu">
-    <button class="mobile-close" id="mobileClose">×</button>
-
-    <nav class="mobile-nav">
+    <nav class="nav-links" id="navLinks">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
-      <a href="services.html">Services</a>
+      <a href="services.html" class="active">Services</a>
       <a href="ai-solutions.html">AI Solutions</a>
       <a href="case-studies.html">Case Studies</a>
       <a href="careers.html">Careers</a>
       <a href="contact.html">Contact</a>
-
-      <div class="mobile-actions">
-        <a class="btn-primary" href="contact.html">Request Consultation</a>
-        <a class="btn-secondary" href="tel:+919739000274">Tap to Call</a>
-      </div>
     </nav>
-  </div>
-</header>
 
-<!-- HERO -->
-<section class="hero small-hero">
-  <h1>Our Services</h1>
-  <p class="lead">From AI-driven transformation to enterprise learning — we help organizations scale with speed and impact.</p>
-</section>
-
-<!-- SERVICES GRID -->
-<section class="section">
-  <h2>What We Offer</h2>
-
-  <div class="service-grid">
-
-    <div class="service-card">
-      <img src="assets/service-ai.jpg" alt="AI Solutions" />
-      <h3>AI & Machine Learning</h3>
-      <p>End-to-end development of ML models, NLP systems, automation pipelines and predictive analytics.</p>
+    <div class="nav-controls">
+      <a class="call-btn" href="tel:+919739000274">📞</a>
+      <a class="wa-btn" href="https://wa.me/919739000274" target="_blank">💬</a>
+      <button class="dark-toggle" id="darkToggle">🌙</button>
+      <button class="hamburger" id="hamburger">☰</button>
     </div>
 
-    <div class="service-card">
-      <img src="assets/service-ld.jpg" alt="L&D" />
-      <h3>Learning & Development</h3>
-      <p>Curriculum design, e-learning, microlearning, enterprise learning systems and instructional design leadership.</p>
+    <div class="mobile-menu" id="mobileMenu">
+      <button class="mobile-close" id="mobileClose">×</button>
+      <nav class="mobile-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html" class="active">Services</a>
+        <a href="ai-solutions.html">AI Solutions</a>
+        <a href="case-studies.html">Case Studies</a>
+        <a href="careers.html">Careers</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </div>
+  </header>
 
-    <div class="service-card">
-      <img src="assets/service-cloud.jpg" alt="Digital Transformation" />
-      <h3>Digital Transformation</h3>
-      <p>Azure DevOps automation, Dynamics 365 CRM solutions, AEM workflows, and enterprise analytics.</p>
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Our Services</h1>
+    <p class="lead">
+      Enterprise solutions across AI, Learning, Cloud, Data, and Digital Transformation.
+    </p>
+  </section>
+
+  <!-- SERVICES GRID -->
+  <section class="section">
+    <h2 class="center">What We Offer</h2>
+    <p class="center lead">Strategic, technical and operational expertise to accelerate business growth.</p>
+
+    <div class="services-grid">
+
+      <div class="service-card">
+        <img src="assets/ai-placeholder.jpg" alt="AI Services" class="service-img">
+        <h3>AI & Machine Learning Solutions</h3>
+        <p>Custom ML models, NLP automation, predictive systems, and AI-driven analytics.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="assets/ld-placeholder.jpg" alt="Learning Solutions" class="service-img">
+        <h3>Enterprise Learning & Development</h3>
+        <p>End-to-end curriculum design, capability academies, and global L&D delivery.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="assets/digital-placeholder.jpg" alt="Digital Transformation" class="service-img">
+        <h3>Digital Transformation</h3>
+        <p>Power Platform, DevOps, D365 automation, cloud modernization and process engineering.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="assets/data-placeholder.jpg" alt="Data Analytics" class="service-img">
+        <h3>Data Analytics & Insights</h3>
+        <p>Power BI dashboards, SQL reporting, ETL pipelines, and data-driven insights.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="assets/pm-placeholder.jpg" alt="Program Management" class="service-img">
+        <h3>Program & Project Management</h3>
+        <p>Multi-region delivery, governance frameworks, KPI reporting, and operations excellence.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="assets/cloud-placeholder.jpg" alt="Cloud Consulting" class="service-img">
+        <h3>Cloud & Technology Enablement</h3>
+        <p>Azure ecosystem, GitHub automation, Salesforce ops, and AEM workflows.</p>
+      </div>
+
     </div>
+  </section>
 
-    <div class="service-card">
-      <img src="assets/service-automation.jpg" alt="Automation" />
-      <h3>Automation & Analytics</h3>
-      <p>Power BI dashboards, workflow automation, KPI systems, data engineering and reporting automation.</p>
+  <!-- DETAILED SERVICE AREAS -->
+  <section class="section detailed-services">
+    <h2 class="center">Detailed Service Areas</h2>
+    <p class="center lead">
+      Comprehensive end-to-end consulting across AI, L&D, Cloud, Data, and enterprise operations.
+    </p>
+
+    <div class="details-grid">
+
+      <div class="detail-card">
+        <h3>AI & Machine Learning</h3>
+        <ul>
+          <li>Custom ML models & automation</li>
+          <li>NLP, text analytics, summarization</li>
+          <li>Forecasting & predictive modeling</li>
+          <li>Sentiment & behavioral intelligence</li>
+          <li>Decision support systems</li>
+          <li>ML data pipelines & engineering</li>
+        </ul>
+      </div>
+
+      <div class="detail-card">
+        <h3>Learning & Development</h3>
+        <ul>
+          <li>Capability academies & upskilling</li>
+          <li>Instructional design & content strategy</li>
+          <li>E-learning development (Storyline, Rise)</li>
+          <li>ILT/VILT programs</li>
+          <li>Learning analytics dashboards</li>
+          <li>Curriculum mapping & skill assessment</li>
+        </ul>
+      </div>
+
+      <div class="detail-card">
+        <h3>Digital Transformation</h3>
+        <ul>
+          <li>Enterprise workflow automation</li>
+          <li>Power Apps & Power Automate</li>
+          <li>Azure DevOps CI/CD pipelines</li>
+          <li>Dynamics 365 setup & automation</li>
+          <li>Cloud migration & modernization</li>
+          <li>Change management enablement</li>
+        </ul>
+      </div>
+
+      <div class="detail-card">
+        <h3>Data Analytics & Insights</h3>
+        <ul>
+          <li>Power BI interactive dashboards</li>
+          <li>SQL optimization & modeling</li>
+          <li>ETL pipelines & automation</li>
+          <li>Enterprise BI governance</li>
+          <li>Data architecture consulting</li>
+          <li>Self-service BI enablement</li>
+        </ul>
+      </div>
+
+      <div class="detail-card">
+        <h3>Program & Project Management</h3>
+        <ul>
+          <li>PMO setup & governance</li>
+          <li>Stakeholder engagement</li>
+          <li>Risk & dependency management</li>
+          <li>Multi-region operations (JAPAC, EMEA, NA)</li>
+          <li>Reporting frameworks & KPIs</li>
+          <li>Strategic program execution</li>
+        </ul>
+      </div>
+
+      <div class="detail-card">
+        <h3>Cloud & Technology Enablement</h3>
+        <ul>
+          <li>Azure solutions & cost optimization</li>
+          <li>GitHub automation & CI/CD</li>
+          <li>Salesforce operations & integration</li>
+          <li>AEM content governance</li>
+          <li>API integration & modernization</li>
+          <li>Security & compliance support</li>
+        </ul>
+      </div>
+
     </div>
+  </section>
 
-  </div>
-</section>
+  <footer>
+    © 2025 Hamrith Consulting Services LLP (HCS). All Rights Reserved.
+  </footer>
 
-<!-- SERVICE DETAILS -->
-<section class="section">
-  <h2>Detailed Service Areas</h2>
-
-  <h3>AI & Machine Learning</h3>
-  <ul>
-    <li>ML model development (classification, regression, forecasting)</li>
-    <li>NLP pipelines — sentiment analysis, text classification</li>
-    <li>Data engineering, feature engineering, preprocessing</li>
-    <li>Automation bots and data workflows</li>
-  </ul>
-
-  <h3>Learning & Development</h3>
-  <ul>
-    <li>Instructional design leadership</li>
-    <li>Curriculum strategy and competency mapping</li>
-    <li>E-learning using Articulate Rise, Storyline, SCORM</li>
-    <li>Learning analytics and capability assessments</li>
-  </ul>
-
-  <h3>Digital & Cloud Enablement</h3>
-  <ul>
-    <li>Azure DevOps CICD pipelines</li>
-    <li>D365 CRM customization and optimization</li>
-    <li>Adobe Experience Manager workflows</li>
-    <li>SQL Server and Power BI integrations</li>
-  </ul>
-
-  <h3>Automation & Operations</h3>
-  <ul>
-    <li>OKRs and KPI framework design</li>
-    <li>Global operations management</li>
-    <li>Reporting systems and dashboards</li>
-    <li>Process automation using Power Automate</li>
-  </ul>
-</section>
-
-<footer>
-  © 2025 Hamrith Consulting Service LLP (HCS). All Rights Reserved.
-</footer>
-
-<button class="callback-btn" id="callbackBtn">Request Callback</button>
-
-<div id="callbackPopup" class="callback-popup">
-  <h3>Request a Callback</h3>
-  <input type="text" placeholder="Your Name" />
-  <input type="text" placeholder="Phone Number" />
-  <button>Submit</button>
-  <button id="closeCallback" class="btn-secondary" style="margin-top:10px;">Close</button>
-</div>
-
+  <script src="scripts.js"></script>
 </body>
+
 </html>
