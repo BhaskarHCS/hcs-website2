@@ -1,0 +1,373 @@
+/* ------------------------------
+   GLOBAL RESET
+------------------------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background: #ffffff;
+  color: #222;
+  line-height: 1.6;
+  transition: background 0.3s, color 0.3s;
+}
+
+body.dark {
+  background: #0d1117;
+  color: #e6e6e6;
+}
+
+/* ------------------------------
+   NAVBAR
+------------------------------ */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 28px;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+body.dark .navbar {
+  background: #161b22;
+  border-bottom: 1px solid #30363d;
+}
+
+.nav-logo {
+  height: 45px;
+  margin-right: 10px;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav-title {
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  color: #003d73;
+}
+
+.dark .nav-title {
+  color: #58a6ff;
+}
+
+.nav-links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.dark .nav-links a {
+  color: #e6e6e6;
+}
+
+.nav-links a:hover {
+  color: #0077cc;
+}
+
+.nav-controls {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.call-btn, .wa-btn {
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.dark-toggle {
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* ------------------------------
+   HAMBURGER MENU (MOBILE)
+------------------------------ */
+.hamburger {
+  display: none;
+  font-size: 26px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  top: 0; right: 0;
+  width: 260px;
+  height: 100%;
+  background: #ffffff;
+  border-left: 1px solid #ccc;
+  padding: 20px;
+  z-index: 2000;
+}
+
+.dark .mobile-menu {
+  background: #161b22;
+  border-left: 1px solid #30363d;
+}
+
+.mobile-menu.open {
+  display: flex;
+}
+
+.mobile-close {
+  font-size: 28px;
+  background: none;
+  border: none;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.mobile-nav a {
+  margin: 16px 0;
+  font-size: 18px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.mobile-actions .btn-primary,
+.mobile-actions .btn-secondary {
+  display: block;
+  margin-top: 20px;
+  padding: 10px 14px;
+  text-align: center;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: #0077cc;
+  color: #fff;
+}
+
+.btn-secondary {
+  background: #e5e5e5;
+  color: #222;
+}
+
+/* ------------------------------
+   HERO SECTION
+------------------------------ */
+.hero {
+  padding: 80px 20px;
+  text-align: center;
+  background: #f4f8fc;
+  color: #003d73;
+}
+
+.dark .hero {
+  background: #0d2842;
+  color: #ffffff;
+}
+
+.small-hero {
+  padding: 60px 20px;
+}
+
+/* ------------------------------
+   SECTIONS
+------------------------------ */
+.section {
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.section h2 {
+  margin-bottom: 20px;
+  color: #003d73;
+}
+
+.dark .section h2 {
+  color: #58a6ff;
+}
+
+.section ul {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+/* ------------------------------
+   DIRECTOR CARDS
+------------------------------ */
+.director-container {
+  display: flex;
+  gap: 30px;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+
+.director-card {
+  width: 260px;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  text-align: center;
+  padding: 18px;
+  border-radius: 8px;
+}
+
+.dark .director-card {
+  background: #161b22;
+  border: 1px solid #30363d;
+}
+
+.director-photo {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* ------------------------------
+   SERVICE CARDS
+------------------------------ */
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.service-card {
+  border: 1px solid #ddd;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.dark .service-card {
+  background: #161b22;
+  border: 1px solid #30363d;
+}
+
+.service-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+/* ------------------------------
+   CASE STUDIES
+------------------------------ */
+.case-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.case-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.dark .case-card {
+  background: #161b22;
+  border: 1px solid #30363d;
+}
+
+.case-card img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+}
+
+/* ------------------------------
+   CONTACT FORM
+------------------------------ */
+form input, form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 6px;
+  border: 1px solid #bbb;
+  font-size: 16px;
+}
+
+form button {
+  margin-top: 15px;
+  padding: 12px 18px;
+  background: #0077cc;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* ------------------------------
+   POPUP CALLBACK FORM
+------------------------------ */
+.callback-btn {
+  position: fixed;
+  bottom: 22px;
+  right: 22px;
+  background: #0077cc;
+  color: #fff;
+  padding: 14px 18px;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 1300;
+}
+
+.callback-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 25px;
+  width: 320px;
+  border-radius: 12px;
+  display: none;
+  z-index: 2000;
+}
+
+.callback-popup.open {
+  display: block;
+}
+
+.dark .callback-popup {
+  background: #161b22;
+  border: 1px solid #30363d;
+}
+
+.callback-popup input {
+  margin-bottom: 10px;
+}
+
+/* ------------------------------
+   FOOTER
+------------------------------ */
+footer {
+  background: #003d73;
+  color: #ffffff;
+  padding: 18px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.dark footer {
+  background: #0a1e33;
+}
